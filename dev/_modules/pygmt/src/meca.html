@@ -533,16 +533,14 @@
                 <span class="n">spec_conv</span> <span class="o">=</span> <span class="n">spec</span>
 
         <span class="c1"># set convention and focal parameters based on spec convention</span>
-        <span class="n">convention_assigned</span> <span class="o">=</span> <span class="kc">False</span>
-        <span class="k">for</span> <span class="n">conv</span> <span class="ow">in</span> <span class="n">param_conventions</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">conv</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">param_conventions</span><span class="p">):</span>
             <span class="k">if</span> <span class="nb">set</span><span class="p">(</span><span class="n">spec_conv</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">==</span> <span class="nb">set</span><span class="p">(</span><span class="n">param_conventions</span><span class="p">[</span><span class="n">conv</span><span class="p">]):</span>
                 <span class="n">convention</span> <span class="o">=</span> <span class="n">conv</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
                 <span class="n">foc_params</span> <span class="o">=</span> <span class="n">param_conventions</span><span class="p">[</span><span class="n">conv</span><span class="p">]</span>
-                <span class="n">convention_assigned</span> <span class="o">=</span> <span class="kc">True</span>
                 <span class="k">break</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">convention_assigned</span><span class="p">:</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># if there is no convention assigned</span>
             <span class="k">raise</span> <span class="n">GMTError</span><span class="p">(</span>
-                <span class="s2">&quot;Parameters in spec dictionary do not match known &quot;</span> <span class="s2">&quot;conventions.&quot;</span>
+                <span class="s2">&quot;Parameters in spec dictionary do not match known conventions.&quot;</span>
             <span class="p">)</span>
 
         <span class="c1"># create a dict type pointer for easier to read code</span>
@@ -715,10 +713,10 @@
         &#169; Copyright 2017-2021, The PyGMT Developers.
       <span class="commit">
         
-        Revision <code><a href="https://github.com/GenericMappingTools/pygmt/commit/b2808cf">b2808cf</a></code>.
+        Revision <code><a href="https://github.com/GenericMappingTools/pygmt/commit/c0ff7f1">c0ff7f1</a></code>.
       </span>
       <span class="lastupdated">
-        Last updated on Jun 20, 2021.
+        Last updated on Jul 08, 2021.
       </span>
 
     </p>

@@ -283,6 +283,27 @@ Symbols and markers
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="The pygmt.Figure.plot method can plot individual custom symbols by passing the corresponding sy...">
+
+.. only:: html
+
+ .. figure:: /gallery/symbols/images/thumb/sphx_glr_custom_symbols_thumb.png
+     :alt: Custom symbols
+
+     :ref:`sphx_glr_gallery_symbols_custom_symbols.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /gallery/symbols/custom_symbols
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Datetime inputs of the following types are supported in PyGMT:">
 
 .. only:: html
@@ -670,7 +691,7 @@ Plot embellishments
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Use pygmt.Figure.solar to show the different transition stages between daytime and nightime. Th...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use pygmt.Figure.solar to show the different transition stages between daytime and nighttime. T...">
 
 .. only:: html
 
